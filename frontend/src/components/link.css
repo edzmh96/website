@@ -1,6 +1,6 @@
 .Link {
     display: inline-block;
-    color: white;
+    color: #C5C6C7;
     margin: 2rem;
 }
 
@@ -10,6 +10,7 @@
 }
 .Link .Text {
     font-family: lato;
+    font-weight: lighter;
     letter-spacing: .2rem;
     margin-right: -.2rem;
 }

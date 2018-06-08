@@ -1,0 +1,29 @@
+.typed {
+    font-family: lato;
+    font-weight: lighter;
+    color: #C5C6C7;
+    font-size: 2rem;
+}
+
+.typed.active {
+    font-size: 1rem;
+}
+
+.IntroSection{
+    padding: 0.5rem;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+}
+
+
+h1 {
+    font-family: lato;
+    font-size: 5rem;
+    color: #C5C6C7;
+    transition: 0.4s ease-in-out;
+}
+
+h1.active {
+    margin: 1rem;
+    font-size: 3rem;
+}

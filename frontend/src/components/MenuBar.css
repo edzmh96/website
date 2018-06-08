@@ -1,0 +1,153 @@
+.menuBar {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+
+.menuIcon {
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+    top: 50%;
+    left: 37%;
+}
+.menuIcon, .menuIcon:before, .menuIcon:after {
+    position: absolute;
+    background-color: #fff;
+    width: 19px;
+    height: 2px;
+    display: flex;
+
+}
+
+.menuIcon:before, .menuIcon:after {
+    content: '';
+    transition: top .2s ease-in .2s,bottom .2s ease-in .2s,-webkit-transform .2s ease-out 0ms;
+    transition: top .2s ease-in .2s,bottom .2s ease-in .2s,transform .2s ease-out 0ms;
+    transition: top .2s ease-in .2s,bottom .2s ease-in .2s,transform .2s ease-out 0ms,-webkit-transform .2s ease-out 0ms;
+}
+
+.menuIcon:before {
+    top: -5px;
+}
+
+.menuIcon:after {
+    bottom: -5px;
+}
+
+.menuIcon.active {
+    background-color: transparent;
+}
+
+.menuIcon.active:before {
+    transform: rotate(45deg);
+}
+
+.menuIcon.active:after {
+    transform: rotate(-45deg);
+}
+
+.menuIcon.active:before, .menuIcon.active:after {
+    top: 0;
+    bottom: 0;
+    transition: top .2s ease-out 0ms,bottom .2s ease-out 0ms,-webkit-transform .2s ease-in .2s;
+    transition: top .2s ease-out 0ms,bottom .2s ease-out 0ms,transform .2s ease-in .2s;
+    transition: top .2s ease-out 0ms,bottom .2s ease-out 0ms,transform .2s ease-in .2s,-webkit-transform .2s ease-in .2s;
+}
+
+.menuButton {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #1d1e22;
+    transition: .4s ease-in-out;
+    box-sizing:border-box;
+    border-style: solid;
+    border-color: transparent;
+    z-index: 1007;
+}
+
+/*.menuButton.hidden {
+    display: none;
+    opacity: 0;
+    top: 0%;
+}
+
+.menuButton.active {
+    display: inline;
+    opacity: 1;
+}*/
+
+.menuButton.first.initial {
+    top: 50%;
+    left: 35%;
+    transform: scale(1.5);
+}
+
+.menuButton.first.initial:hover,
+.menuButton.second.initial:hover {
+    border-style: solid;
+    border-color: white;
+    opacity: 1;
+}
+
+.menuButton.second.initial {
+    top: 50%;
+    left: 60%;
+    transform: scale(1.5);
+}
+
+.menuButton.first {
+    top: 28%;
+    left: 5%
+}
+
+.menuButton.second {
+    top: 55%;
+    left: 5%
+}
+
+.menuButton.first.active{
+    border-color: white;
+}
+
+.menuButton.second.active{
+    border-color: white;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.iconText.initial{
+    display: flex;
+    margin-top: -25px;
+    margin-left: 1px;
+    font-family: lato;
+    font-weight: lighter;
+    color: white;
+}
+
+.iconText.first {
+    margin-left: 3px;
+}
+
+.iconText.second {
+    margin-left: 1px;
+}
+
+.iconText {
+    display: none;
+}
+.icon {
+    top: 39%;
+    left: 38%;
+    position: absolute;
+}
+
+.robot {
+    left: 33%;
+    top: 33%;
+    position: absolute;
+}

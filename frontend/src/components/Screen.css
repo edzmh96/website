@@ -1,0 +1,65 @@
+.Screen {
+    position: absolute;
+    left: 20%;
+    background-color: transparent;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    transition: 0.4s ease-in-out;
+}
+
+.Screen.initial {
+    opacity: 0;
+    display: none;
+}
+
+.Section {
+    width: 33.33%;
+    height: 50%;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    background-color: #0B0C10;
+    transform-style: preserve-3d;
+}
+
+.Section:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.Section.project {
+    width: 30%;
+    height: 47%;
+    border-radius: 5px;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+    margin: 0.4rem;
+}
+
+.Section.bot {
+    width: 33.33%;
+    height: 50%;
+    border-radius: none;
+    padding: none;
+}
+
+.Section.bot._0 {
+    border-radius: 5px 0px 0px 0px;
+}
+
+
+.Section.bot._2 {
+    border-radius: 0px 5px 0px 0px;
+}
+
+
+.Section.bot._3 {
+    border-radius: 0px 0px 0px 5px;
+}
+
+
+.Section.bot._5 {
+    border-radius: 0px 0px 5px 0px;
+}
