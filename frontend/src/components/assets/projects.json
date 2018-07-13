@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "name": "terminal-fb-messenger",
+            "description" : "a fb messenger client on the terminal",
+            "image" : "",
+            "link" : "https://github.com/edzmh96/terminal-fb-messenger",
+        },{
+            "name": "Count on Us",
+            "description" : "IOS app that features goods, services and food places where discounts are available for SAP employees",
+            "image" : "",
+            "link" : "https://github.com/edzmh96/Count-on-Us",
+        },{
+            "name": "Memento",
+            "description" : "Gallery app that allows one to tag and search photos using metadata",
+            "image" : "",
+            "link" : "https://github.com/edzmh96/Memento",
+        },{
+
+        }
+    ],
+}

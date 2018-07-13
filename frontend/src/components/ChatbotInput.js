@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ChatbotInput.css';
 
- class ChatbotInput extends React.Component {
+class ChatbotInput extends Component {
   constructor() {
     super();
 
@@ -27,6 +27,7 @@ import './ChatbotInput.css';
       <div className={`input-wrapper ${mode}`}>
         <input
           onChange={this.onInputChange}
+          onKeyPress={this.handleKeyPress}
           placeholder='Say Hi!'
           value={inputValue}
           spellCheck={false}

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './MenuBar.css';
 import Robot from '../svgs/Robot';
 import Icon from '../svgs/Icon';
-import { CSSTransitionGroup } from 'react-transition-group'
 
 // const MenuBarButton = ({active, onButtonClick}) => {
 //     return (

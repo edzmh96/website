@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Screen.css';
-import ChatbotInput from './ChatbotInput';
+import MessageScreen from './MessageScreen';
 
 const Section = (props) => {
     const { mode, position } = props;
@@ -9,7 +9,7 @@ const Section = (props) => {
             { (mode==="project") &&
                 <div className="projectInfo">
                     <div className={"sectionMask"}>
-                        <img src="./testpic.jpeg" />
+                        <img src="./testpic.jpeg" alt="hello" />
                     </div>
                     <div className={"description"}>
 
@@ -32,7 +32,7 @@ class Screen extends Component {
         return (
             <div className={`Screen ${ className }`}>
                 {sections}
-                <ChatbotInput mode={className} />
+                <MessageScreen mode={className} />
             </div>
         )
     }
